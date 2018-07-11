@@ -1,2 +1,8 @@
 E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\obj\Debug\DomainModelTest.csprojResolveAssemblyReference.cache
 E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\obj\Debug\DomainModelTest.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\bin\Debug\DomainModelTest.dll.config
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\bin\Debug\DomainModelTest.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\bin\Debug\DomainModelTest.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\bin\Debug\DomainModel.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\bin\Debug\DomainModel.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\obj\Debug\DomainModelTest.pdb
