@@ -1,0 +1,72 @@
+﻿<Window x:Class="EGITSGymManager.Forms.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="120" Width="300" BorderThickness="1" BorderBrush="DarkGray" ResizeMode="NoResize" Background="#FF8E97A2" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" ResizeBorderThickness="0" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <Style x:Key="CustomButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF7C6A6A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Login" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="Bold"></TextBlock>
+            <Button Grid.Column="1" Style="{StaticResource CustomButton}" Name="MinimizeBtn" Click="MinimizeBtn_Click" Content="__" Foreground="White" Background="#FF3D5066"></Button>
+            <Button Grid.Column="2" Style="{StaticResource CustomButton}" Name="CloseBtn" Click="CloseBtn_Click" Content="X" Foreground="White" Background="#FFEE6464"></Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="User ID:" Foreground="White" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"></Label>
+                <TextBox Name="userIdTB" Grid.Row="0" VerticalAlignment="Center" Grid.Column="1"/>
+
+                <TextBlock Name="errorTB" Foreground="DarkKhaki" Text="sdsdjsnndsjsdjdnjnsjndsjsdnss" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                <Button Style="{StaticResource CustomButton}" Name="LoginBtn" Grid.Column="0" Grid.Row="3" Height="25" Grid.ColumnSpan="2" Click="LoginBtn_Click" Content="Login" Foreground="White" Background="#FF3D5066"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

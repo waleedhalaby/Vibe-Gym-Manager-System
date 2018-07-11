@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="EGITSGymManager.Modules.HomeUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Background="#B28E97A2">
+    <UserControl.Resources>
+        <Style x:Key="CustomButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/profile-icon.png"/>
+                <TextBlock Text="Welcome user" Grid.Column="1" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                <Button Grid.Column="2" Style="{StaticResource CustomButton}" Name="MinimizeBtn" Click="LogoutBtn_Click" Content="Logout" Foreground="White" Background="#FFEE6464"></Button>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="0" Name="DashboardBtn" VerticalAlignment="Top" Height="40" Click="DashboardBtn_Click" Content="Dashboard" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="1" Name="MembersBtn" VerticalAlignment="Top" Height="40" Click="MembersBtn_Click" Content="Members" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="2" Name="AddContractBtn" VerticalAlignment="Top" Height="40" Click="AddContractBtn_Click" Content="Add Contract" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="3" Name="NotificationBtn" VerticalAlignment="Top" Height="40" Click="NotificationBtn_Click" Content="Notifications" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="4" Name="EmployeesBtn" VerticalAlignment="Top" Height="40" Click="EmployeesBtn_Click" Content="Employees" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="5" Name="ReportsBtn" VerticalAlignment="Top" Height="40" Click="ReportsBtn_Click" Content="Reports" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="6" Name="PackagesBtn" VerticalAlignment="Top" Height="40" Click="PackagesBtn_Click" Content="Packages" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="7" Name="TitlesBtn" VerticalAlignment="Top" Height="40" Click="TitlesBtn_Click" Content="Titles" Foreground="White" Background="#FF3D5066"></Button>
+                </Grid>
+                <Grid Name="MainGrid" Grid.Row="1" Grid.Column="2" Background="#99EAE4E4"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
