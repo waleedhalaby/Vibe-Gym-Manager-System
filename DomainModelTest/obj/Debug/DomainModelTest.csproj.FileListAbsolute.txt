@@ -1,0 +1,2 @@
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\obj\Debug\DomainModelTest.csprojResolveAssemblyReference.cache
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModelTest\obj\Debug\DomainModelTest.dll

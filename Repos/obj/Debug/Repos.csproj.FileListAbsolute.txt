@@ -1,0 +1,7 @@
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\bin\Debug\Repos.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\bin\Debug\Repos.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\bin\Debug\DomainModel.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\bin\Debug\DomainModel.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\obj\Debug\Repos.csprojResolveAssemblyReference.cache
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\obj\Debug\Repos.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\Repos\obj\Debug\Repos.pdb
