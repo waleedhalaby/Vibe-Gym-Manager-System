@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DomainModel.Models;
 using EGITSGymManager.Forms;
 
 namespace EGITSGymManager.Modules

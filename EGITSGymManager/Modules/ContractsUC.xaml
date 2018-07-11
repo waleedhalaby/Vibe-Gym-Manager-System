@@ -13,10 +13,5 @@
         <Grid Background="#FF3D5066">
             <TextBlock Text="Contracts" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold"/>
         </Grid>
-        <ScrollViewer Grid.Row="1">
-            <Grid>
-
-            </Grid>
-        </ScrollViewer>
     </Grid>
 </UserControl>

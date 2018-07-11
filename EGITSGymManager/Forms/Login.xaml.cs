@@ -39,7 +39,7 @@ namespace EGITSGymManager.Forms
         {
             HomeUC homeUC = new HomeUC();
             Grid.SetColumn(homeUC, 1);
-            Grid.SetRow(homeUC, 1);
+            Grid.SetRow(homeUC, 2);
             ((Grid)((Grid)Application.Current.MainWindow.Content).Children[1]).Children.Add(homeUC);
             Close();
         }

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="EGITSGymManager.Intro"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Intro" ResizeMode="NoResize" WindowStyle="None" Height="200" Width="300" WindowStartupLocation="CenterScreen" Background="#FF8E97A2">
+        Title="Intro" ResizeMode="NoResize" WindowStyle="None" Height="200" Width="300" WindowStartupLocation="CenterScreen" Background="#FFFEFF">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0" ResizeBorderThickness="0" />
     </WindowChrome.WindowChrome>

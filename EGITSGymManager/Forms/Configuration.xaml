@@ -64,8 +64,8 @@
                 <Label Content="Admin Name:" Foreground="White" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"></Label>
                 <TextBox Name="adminNameTB" Grid.Row="0" VerticalAlignment="Center" Grid.Column="1"/>
 
-                <TextBlock Name="errorTB" Foreground="DarkKhaki" Text="sdsdjsnndsjsdjdnjnsjndsjsdnss" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                <Button Style="{StaticResource CustomButton}" Name="RegisterBtn" Grid.Column="0" Grid.Row="2" Height="25" Grid.ColumnSpan="2" Click="RegisterBtn_Click" Content="Login" Foreground="White" Background="#FF3D5066"></Button>
+                <TextBlock Name="errorTB" Foreground="LightGreen" Text="Admin Name is required" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                <Button Style="{StaticResource CustomButton}" Name="RegisterBtn" Grid.Column="0" Grid.Row="2" Height="25" Grid.ColumnSpan="2" Click="RegisterBtn_Click" Content="Register" Foreground="White" Background="#FF3D5066"></Button>
             </Grid>
         </Grid>
     </Grid>

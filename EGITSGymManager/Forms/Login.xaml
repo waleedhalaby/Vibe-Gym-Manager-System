@@ -64,7 +64,7 @@
                 <Label Content="User ID:" Foreground="White" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"></Label>
                 <TextBox Name="userIdTB" Grid.Row="0" VerticalAlignment="Center" Grid.Column="1"/>
 
-                <TextBlock Name="errorTB" Foreground="DarkKhaki" Text="sdsdjsnndsjsdjdnjnsjndsjsdnss" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                <TextBlock Name="errorTB" Foreground="LightGreen" Text="User ID not found" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
                 <Button Style="{StaticResource CustomButton}" Name="LoginBtn" Grid.Column="0" Grid.Row="2" Height="25" Grid.ColumnSpan="2" Click="LoginBtn_Click" Content="Login" Foreground="White" Background="#FF3D5066"></Button>
             </Grid>
         </Grid>
