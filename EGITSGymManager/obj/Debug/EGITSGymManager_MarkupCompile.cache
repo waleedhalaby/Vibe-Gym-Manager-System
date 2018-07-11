@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\obj\Debug\
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\obj\Debug\
 EGITSGymManager
 none
 false
 DEBUG;TRACE
-E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\App.xaml
-17205611155
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\App.xaml
+11613420402
 
-22-1679561935
-13-102635414
-Forms\AddMemberFrm.xaml;Forms\ContractsFrm.xaml;Forms\EditMemberFrm.xaml;Forms\ViewMemberFrm.xaml;Modules\DashboardUC.xaml;Modules\EmployeesUC.xaml;Modules\MembersUC.xaml;Modules\AddContractUC.xaml;Modules\HomeUC.xaml;Intro.xaml;Forms\Configuration.xaml;Forms\Login.xaml;MainWindow.xaml;Modules\Packages.xaml;Modules\ReportsUC.xaml;Modules\NotificationUC.xaml;Modules\Titles.xaml;
+15-1135408523
+1392112792
+Modules\DashboardUC.xaml;Modules\EmployeesUC.xaml;Modules\MembersUC.xaml;Modules\HomeUC.xaml;Intro.xaml;Forms\Configuration.xaml;Forms\Login.xaml;MainWindow.xaml;Modules\ContractsUC.xaml;Modules\ReportsUC.xaml;Modules\NotificationUC.xaml;
 
 False
 

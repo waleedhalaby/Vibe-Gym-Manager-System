@@ -69,17 +69,13 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Button Style="{StaticResource CustomButton}" Grid.Row="0" Name="DashboardBtn" VerticalAlignment="Top" Height="40" Click="DashboardBtn_Click" Content="Dashboard" Foreground="White" Background="#FF3D5066"></Button>
                     <Button Style="{StaticResource CustomButton}" Grid.Row="1" Name="MembersBtn" VerticalAlignment="Top" Height="40" Click="MembersBtn_Click" Content="Members" Foreground="White" Background="#FF3D5066"></Button>
-                    <Button Style="{StaticResource CustomButton}" Grid.Row="2" Name="AddContractBtn" VerticalAlignment="Top" Height="40" Click="AddContractBtn_Click" Content="Add Contract" Foreground="White" Background="#FF3D5066"></Button>
+                    <Button Style="{StaticResource CustomButton}" Grid.Row="2" Name="ContractsBtn" VerticalAlignment="Top" Height="40" Click="ContractsBtn_Click" Content="Contracts" Foreground="White" Background="#FF3D5066"></Button>
                     <Button Style="{StaticResource CustomButton}" Grid.Row="3" Name="NotificationBtn" VerticalAlignment="Top" Height="40" Click="NotificationBtn_Click" Content="Notifications" Foreground="White" Background="#FF3D5066"></Button>
                     <Button Style="{StaticResource CustomButton}" Grid.Row="4" Name="EmployeesBtn" VerticalAlignment="Top" Height="40" Click="EmployeesBtn_Click" Content="Employees" Foreground="White" Background="#FF3D5066"></Button>
                     <Button Style="{StaticResource CustomButton}" Grid.Row="5" Name="ReportsBtn" VerticalAlignment="Top" Height="40" Click="ReportsBtn_Click" Content="Reports" Foreground="White" Background="#FF3D5066"></Button>
-                    <Button Style="{StaticResource CustomButton}" Grid.Row="6" Name="PackagesBtn" VerticalAlignment="Top" Height="40" Click="PackagesBtn_Click" Content="Packages" Foreground="White" Background="#FF3D5066"></Button>
-                    <Button Style="{StaticResource CustomButton}" Grid.Row="7" Name="TitlesBtn" VerticalAlignment="Top" Height="40" Click="TitlesBtn_Click" Content="Titles" Foreground="White" Background="#FF3D5066"></Button>
                 </Grid>
                 <Grid Name="MainGrid" Grid.Row="1" Grid.Column="2" Background="#99EAE4E4"/>
             </Grid>

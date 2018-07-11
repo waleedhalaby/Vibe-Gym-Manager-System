@@ -42,20 +42,20 @@ namespace EGITSGymManager
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var executablePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            if (File.Exists(executablePath + @"\Configurations.xml"))
+            if (true)
             {
                 Intro intro = new Intro();
                 intro.ShowDialog();
             }
-            else
-            {
-                Configuration config = new Configuration();
-                config.ShowDialog();
-                //HomeUC homeUC = new HomeUC();
-                //Grid.SetColumn(homeUC, 1);
-                //Grid.SetRow(homeUC, 1);
-                //((Grid)((Grid)Application.Current.MainWindow.Content).Children[1]).Children.Add(homeUC);
-            }
+            //else
+            //{
+            //    Configuration config = new Configuration();
+            //    config.ShowDialog();
+            //    //HomeUC homeUC = new HomeUC();
+            //    //Grid.SetColumn(homeUC, 1);
+            //    //Grid.SetRow(homeUC, 1);
+            //    //((Grid)((Grid)Application.Current.MainWindow.Content).Children[1]).Children.Add(homeUC);
+            //}
         }
     }
 }

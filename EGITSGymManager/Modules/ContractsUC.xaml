@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="EGITSGymManager.Modules.Titles"
+﻿<UserControl x:Class="EGITSGymManager.Modules.ContractsUC"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -11,7 +11,7 @@
             <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
         <Grid Background="#FF3D5066">
-            <TextBlock Text="Titles" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="Contracts" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold"/>
         </Grid>
         <ScrollViewer Grid.Row="1">
             <Grid>

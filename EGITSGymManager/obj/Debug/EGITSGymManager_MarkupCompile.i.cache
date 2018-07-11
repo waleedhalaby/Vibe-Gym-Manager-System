@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\App.xaml
-17205611155
+11613420402
 
-26428393889
+19972547301
 1392112792
-Forms\AddMemberFrm.xaml;Forms\ContractsFrm.xaml;Forms\EditMemberFrm.xaml;Forms\ViewMemberFrm.xaml;Modules\DashboardUC.xaml;Modules\EmployeesUC.xaml;Modules\MembersUC.xaml;Modules\AddContractUC.xaml;Modules\HomeUC.xaml;Intro.xaml;Forms\Configuration.xaml;Forms\Login.xaml;MainWindow.xaml;Modules\Packages.xaml;Modules\ReportsUC.xaml;Modules\NotificationUC.xaml;Modules\Titles.xaml;
+Modules\DashboardUC.xaml;Modules\EmployeesUC.xaml;Modules\MembersUC.xaml;Modules\HomeUC.xaml;Intro.xaml;Forms\Configuration.xaml;Forms\Login.xaml;MainWindow.xaml;Modules\ContractsUC.xaml;Modules\ReportsUC.xaml;Modules\NotificationUC.xaml;
 
 False
 

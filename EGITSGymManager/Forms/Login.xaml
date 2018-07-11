@@ -65,7 +65,7 @@
                 <TextBox Name="userIdTB" Grid.Row="0" VerticalAlignment="Center" Grid.Column="1"/>
 
                 <TextBlock Name="errorTB" Foreground="DarkKhaki" Text="sdsdjsnndsjsdjdnjnsjndsjsdnss" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                <Button Style="{StaticResource CustomButton}" Name="LoginBtn" Grid.Column="0" Grid.Row="3" Height="25" Grid.ColumnSpan="2" Click="LoginBtn_Click" Content="Login" Foreground="White" Background="#FF3D5066"></Button>
+                <Button Style="{StaticResource CustomButton}" Name="LoginBtn" Grid.Column="0" Grid.Row="2" Height="25" Grid.ColumnSpan="2" Click="LoginBtn_Click" Content="Login" Foreground="White" Background="#FF3D5066"></Button>
             </Grid>
         </Grid>
     </Grid>

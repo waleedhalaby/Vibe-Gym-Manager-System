@@ -3,3 +3,8 @@ E:\Work\EGITS GYM\EGITSGymManager\DomainModel\bin\Debug\DomainModel.pdb
 E:\Work\EGITS GYM\EGITSGymManager\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
 E:\Work\EGITS GYM\EGITSGymManager\DomainModel\obj\Debug\DomainModel.dll
 E:\Work\EGITS GYM\EGITSGymManager\DomainModel\obj\Debug\DomainModel.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModel\bin\Debug\DomainModel.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModel\bin\Debug\DomainModel.pdb
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModel\obj\Debug\DomainModel.dll
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\DomainModel\obj\Debug\DomainModel.pdb

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace EGITSGymManager.Modules
 {
     /// <summary>
-    /// Interaction logic for AddMemberUC.xaml
+    /// Interaction logic for Contracts.xaml
     /// </summary>
-    public partial class AddContractUC : UserControl
+    public partial class ContractsUC : UserControl
     {
-        public AddContractUC()
+        public ContractsUC()
         {
             InitializeComponent();
         }

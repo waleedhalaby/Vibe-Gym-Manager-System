@@ -37,12 +37,12 @@ namespace EGITSGymManager.Modules
             intro.ShowDialog();
         }
 
-        private void AddContractBtn_Click(object sender, RoutedEventArgs e)
+        private void ContractsBtn_Click(object sender, RoutedEventArgs e)
         {
             RemoveAllActiveButtons();
             this.MainGrid.Children.Clear();
-            this.MainGrid.Children.Add(new AddContractUC());
-            AddContractBtn.Background = new SolidColorBrush(Colors.DeepSkyBlue);
+            this.MainGrid.Children.Add(new ContractsUC());
+            ContractsBtn.Background = new SolidColorBrush(Colors.DeepSkyBlue);
         }
 
         private void MembersBtn_Click(object sender, RoutedEventArgs e)
@@ -85,28 +85,10 @@ namespace EGITSGymManager.Modules
             ReportsBtn.Background = new SolidColorBrush(Colors.DeepSkyBlue);
         }
 
-        private void PackagesBtn_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveAllActiveButtons();
-            this.MainGrid.Children.Clear();
-            this.MainGrid.Children.Add(new Packages());
-            PackagesBtn.Background = new SolidColorBrush(Colors.DeepSkyBlue);
-        }
-
-        private void TitlesBtn_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveAllActiveButtons();
-            this.MainGrid.Children.Clear();
-            this.MainGrid.Children.Add(new Titles());
-            TitlesBtn.Background = new SolidColorBrush(Colors.DeepSkyBlue);
-        }
-
         private void RemoveAllActiveButtons()
         {
-            PackagesBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
-            TitlesBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
             ReportsBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
-            AddContractBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
+            ContractsBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
             MembersBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
             EmployeesBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));
             DashboardBtn.Background = new SolidColorBrush(Color.FromRgb(61, 80, 102));

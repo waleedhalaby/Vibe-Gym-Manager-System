@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="400" PreviewKeyDown="MembersUC_OnPreviewKeyDown">
+             d:DesignHeight="300" d:DesignWidth="400">
     <UserControl.Resources>
         <Style x:Key="CustomButton" TargetType="Button">
             <Setter Property="OverridesDefaultStyle" Value="True" />
@@ -33,113 +33,5 @@
         <Grid Background="#FF3D5066">
             <TextBlock Text="Members" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold"/>
         </Grid>
-        <ScrollViewer Grid.Row="1" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition Width="20*"/>
-                    <ColumnDefinition Width="10"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="10"/>
-                    <RowDefinition Height="20*"/>
-                    <RowDefinition Height="10"/>
-                </Grid.RowDefinitions>
-                <Grid Grid.Row="1" Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="5"/>
-                        <RowDefinition Height="3*"/>
-                        <RowDefinition Height="5"/>
-                        <RowDefinition Height="20*"/>
-                    </Grid.RowDefinitions>
-                    <Button Style="{StaticResource CustomButton}" Grid.Row="0" Name="AddMemberBtn" VerticalAlignment="Center" Height="40" Click="AddMemberBtn_Click" Content="Add Member" Foreground="White" Background="#FF3D5066"></Button>
-                    <Grid Grid.Row="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="5*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Search By:" FontSize="12" FontWeight="Bold" Foreground="White"></TextBlock>
-                        <ComboBox Name="searchByCB" VerticalAlignment="Center" Margin="6,5,4,5" Grid.Column="1" SelectionChanged="Selector_OnSelectionChanged">
-                            <ComboBoxItem Content="ID" IsSelected="True"/>
-                            <ComboBoxItem Content="NAME"/>
-                        </ComboBox>
-                        <TextBlock Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Member ID:" FontSize="12" FontWeight="Bold" Foreground="White"></TextBlock>
-                        <TextBox Name="memberIDTB" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Center" Height="25" Grid.Column="3"/>
-                        <Button Style="{StaticResource CustomButton}" Name="SearchBtn" Height="20" Grid.Column="4" Click="SearchBtn_Click" Content="Search" Foreground="White" Background="#FF3D5066"></Button>
-                    </Grid>
-                    <DataGrid Grid.Row="4" CanUserAddRows="False" CanUserResizeColumns="True" AutoGenerateColumns="False" Name="dgMembers" HorizontalGridLinesBrush="#FFA29999" VerticalGridLinesBrush="#FFA29999" AlternationCount="1" AlternatingRowBackground="#FFEAD3D3" ColumnHeaderHeight="31" RowHeight="35">
-                        <DataGrid.Columns>
-                            <DataGridTemplateColumn Header="Id" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <TextBlock VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Id}" />
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Name" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <TextBlock VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Name}" />
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Gender" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <TextBlock VerticalAlignment="Center" Text="{Binding Gender}" />
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Mobile" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <TextBlock VerticalAlignment="Center" Text="{Binding MobileNumber}" />
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="IN" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Foreground="White" Style="{StaticResource CustomButton}" Background="#FF46BB46" Name="InBtn" Click="InBtn_OnClick" VerticalAlignment="Center" CommandParameter="{Binding Path=Id}" Content="IN"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="OUT" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Foreground="White" Style="{StaticResource CustomButton}" Background="#FF9C3B3B" Name="OutBtn" Click="OutBtn_OnClick" VerticalAlignment="Center" CommandParameter="{Binding Path=Id}" Content="OUT"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="View" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Foreground="White" Style="{StaticResource CustomButton}" Background="#FF3D5066" Name="ViewBtn" Click="ViewBtn_OnClick" VerticalAlignment="Center" CommandParameter="{Binding Path=Id}" Content="View"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Edit" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Foreground="White" Style="{StaticResource CustomButton}" Background="#FF3D5066" Name="EditBtn" Click="EditBtn_OnClick" VerticalAlignment="Center" CommandParameter="{Binding Path=Id}" Content="Edit"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Delete" IsReadOnly="True" Width="*">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Foreground="White" Style="{StaticResource CustomButton}" Background="#FFEA4747" Name="DeleteBtn" Click="DeleteBtn_OnClick" VerticalAlignment="Center" CommandParameter="{Binding Path=Id}" Content="Delete"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </Grid>
-            </Grid>
-        </ScrollViewer>
     </Grid>
 </UserControl>
