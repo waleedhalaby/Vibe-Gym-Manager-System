@@ -92,3 +92,6 @@ E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\obj\Debug\EGITSGymManager_Marku
 E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\obj\Debug\EGITSGymManager.g.resources
 E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\obj\Debug\EGITSGymManager.Properties.Resources.resources
 E:\Work\VIBE GYM\EGITSGymManager\EGITSGymManager\obj\Debug\EGITSGymManager.csproj.GenerateResource.Cache
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\bin\Debug\EGITSGymManager.exe.config
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\obj\Debug\EGITSGymManager.exe
+E:\Work\VIBE GYM\VibeGymSys\Vibe-Gym-Manager-System\EGITSGymManager\obj\Debug\EGITSGymManager.pdb
