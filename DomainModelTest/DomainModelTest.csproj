@@ -52,12 +52,16 @@
   <ItemGroup>
     <Compile Include="SystemLoggerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MemberTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DomainModel\DomainModel.csproj">
       <Project>{a3b8df3a-7475-4c0a-946d-d082a6295264}</Project>
       <Name>DomainModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

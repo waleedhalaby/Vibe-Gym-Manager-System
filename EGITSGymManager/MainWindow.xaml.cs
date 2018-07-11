@@ -43,15 +43,15 @@ namespace EGITSGymManager
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var executablePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            if (true)
-            {
-                Intro intro = new Intro();
-                intro.ShowDialog();
-            }
+            //if (true)
+            //{
+            //    Intro intro = new Intro();
+            //    intro.ShowDialog();
+            //}
             //else
             //{
-            //    Configuration config = new Configuration();
-            //    config.ShowDialog();
+                Configuration config = new Configuration();
+                config.ShowDialog();
             //    //HomeUC homeUC = new HomeUC();
             //    //Grid.SetColumn(homeUC, 1);
             //    //Grid.SetRow(homeUC, 1);
